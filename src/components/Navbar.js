@@ -21,9 +21,8 @@ const NavButton = ({ title, customFunc, icon, color, dotColor }) => (
       <span
         style={{ background: dotColor }}
         className="absolute inline-flex rounded-full h-2 w-2 right-2 top-2"
-      >
+      />
         {icon}
-      </span>
     </button>
   </TooltipComponent>
 );
@@ -46,7 +45,7 @@ const Navbar = () => {
       setActiveMenu(true);
     }
   }, []);
-  
+
   return (
     <div className="flex justify-between p-2 md:mx-6 relative">
       <NavButton
